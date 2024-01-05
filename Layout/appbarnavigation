@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigationActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/Theme.Project.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width = "match_parent"
+            android:background="@drawable/smilesss"
+              app:popupTheme="@style/Theme.Project.PopupOverlay"
+            android:layout_height = "?attr/actionBarSize" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <include layout="@layout/content_navigation"/>
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+  android:id="@+id/fab"
+      app:rippleColor="@color/Gray"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_gravity="bottom|end"
+  android:layout_marginEnd="@dimen/fab_margin"
+      android:rotation="545"
+
+  android:layout_marginBottom="16dp"
+  app:srcCompat="@drawable/baseline_logout_24" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+
+        android:paddingStart="125dp"
+
+        android:hint="Search"
+        android:text="Search"
+        android:saveEnabled="true"
+        android:focusableInTouchMode="true"
+
+        android:defaultFocusHighlightEnabled="false"
+        android:outlineAmbientShadowColor="@color/brown"
+        android:layout_marginRight="110dp"
+        android:accessibilityDataSensitive="auto"
+        android:paddingRight="110dp" />
+    <androidx.appcompat.widget.Toolbar
+        android:fadingEdge="vertical"
+        android:id="@+id/Picture"
+        android:layout_width="150dp"
+        android:layout_height="190dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/name"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
