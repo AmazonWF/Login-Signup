@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_navigation">
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_navigation"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation"
+    />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="295dp"
+        android:layout_height="150dp"
+        android:fontFamily="serif"
+        android:padding="50dp"
+        android:paddingRight="40dp"
+        android:text="HI! I AM JOHN MICHAEL"
+        android:textColor="@color/black"
+
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="295dp"
+        android:layout_height="150dp"
+        android:fontFamily="serif"
+        android:padding="50dp"
+        android:paddingRight="40dp"
+        android:text="You want to know my story?"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="354dp"
+        android:layout_height="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment_content_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fontFamily="serif"
+            android:hint=""
+            android:text="A Journey of my Life Everything has a history. Everyone has their own endeavor. It depends on how they take it, how they overcome each situation and how they will face each circumstance that made their endeavor meaningful. As a student, I am leaving a very simple yet a fruitful life. I started as a toddler who wants to be my parents be proud of me. I did my very best to study hard and to receive an award every end of the school year. Then I came to the first ground of my studies, my elementary days. At this point of my life, I gained lot of friends. I had a lot of chances to meet and face different kind of people. This really affects me as a person and as a student. But the thing is that I had to overcome each temptation that I know may have a bad effect to my studies. I also joined the varsity in school so as my extra-curricular activity. And as I end the first ground of my studies, I thank God because I still had my award as one of the top students in the class. Then I entered to my high school life. I can say that this is the most adventurous and wonderful part of my life. This is the time that I met my true friends. And until now, we are still all together. I can say that our friendship will never end and we will all be friends until the end of time. And now, I am in my tertiary level, my college life. This is a wider world for me. I spent my 1st and 2nd year at TIP (Technological Institute of the Philippines). At this point, I had my girlfriend. We were like Romeo and Juliet. I made her my life, my world and everything. But our relationship didn’t last very long. We ended our relationship because of a very important reason- God. I had a failing grade there so my parents decided I’ll stop studying as a"
+            android:textColor="@color/black" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
